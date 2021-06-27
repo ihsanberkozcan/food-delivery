@@ -26,7 +26,7 @@ export default function Restorant({ restaurant }) {
             value={`${process.env.NEXT_PUBLIC_URL}/restaurants/${restaurant.id}`}
           />
         </div>
-        <ul className="grid gap-x-4 gap-y-4  grid-cols-5 px-5 md:px-20 mt-5">
+        <ul className="grid gap-x-4 gap-y-4 grid-cols-5 md:px-20 mt-5">
           {restaurant.dishes.map((dish) => (
             <li
               key={dish.id}

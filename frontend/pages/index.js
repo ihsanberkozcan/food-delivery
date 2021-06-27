@@ -24,7 +24,7 @@ export default function Home({ restaurants, error }) {
       </Head>
       <Header />
       <Search />
-      <ul className="flex flex-wrap px-5 md:px-20">
+      <ul className="grid gap-x-4 gap-y-4  grid-cols-5  md:px-20">
         {restaurants.map((restaurant) => (
           <Link
             as={`/restaurants/${restaurant.id}`}
@@ -32,7 +32,7 @@ export default function Home({ restaurants, error }) {
             key={restaurant.id}
           >
             <div
-              className="relative transition hover:scale-105 duration-300 ease-in-out rounded-md w-full md:w-64 p-5 shadow-xl border-2 m-1.5 mb-5 md:mb-2 bg-white"
+              className="relative transition hover:scale-105 duration-300 ease-in-out rounded-md w-full md:w-64 p-5 shadow-xl border-2  bg-white"
             >
               <img
                 className="object-cover h-80 md:h-48 w-full"
