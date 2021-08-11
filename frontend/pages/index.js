@@ -15,7 +15,7 @@ export default function Home({ restaurants, error }) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Yummy</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
